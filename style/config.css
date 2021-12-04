@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+body {
+  line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+p,
+h1,
+h2,
+h3,
+h4,
+img {
+  padding: 0.5em;
+}
+
+:root {
+  --ORANGE1: #e65d16;
+  --BLACK1: #19181c;
+  --BLUE1: #3671b9;
+  --BLUE2: #5399c3;
+  --BLUE3: #3595a0;
+  --GREEN1: #bed64c;
+  --GRAY1: #c3c3b4;
+  --WHITE1: #edf0f0;
+}
+
+body {
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  /* padding: 1rem; */
+  text-align: justify;
+}
+
+/*FIM RESET*/
+
+.left-aside {
+  width: 100px;
+}
+
+.logo {
+  padding: 0;
+  margin-bottom: 20px;
+  position: relative;
+  left: -17px;
+  width: 10px;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 12px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nav-link {
+  color: var(--BLACK1);
+  width: fit-content;
+  padding: 0.6rem;
+  border-radius: 12px;
+  font-size: x-large;
+}
+
+.nav-link:hover {
+  background-color: var(--ORANGE1);
+  color: var(--WHITE1);
+  box-shadow: 0 4px 15px -6px var(--ORANGE1);
+}
+
+.active-nav {
+  background-color: var(--ORANGE1);
+  color: var(--WHITE1);
+  box-shadow: 0 4px 15px -6px var(--ORANGE1);
+  transition: 0.8s;
+}
+
+.btn-feito {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ORANGE1);
+  border-radius: 12px;
+  background-color: var(--ORANGE1);
+  text-decoration: none;
+  color: var(--WHITE1);
+  box-shadow: 0 4px 15px -6px var(--ORANGE1);
+}
+.overlay {
+  display: none;
+}
+
+body {
+  padding: 1rem;
+}
+
+aside {
+  position: fixed;
+  z-index: 1000;
+  left: 1;
+  top: 0;
+}
+
+@media (max-width: 769px) {
+  .overlay {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    position: absolute;
+    z-index: 10001;
+    background-color: var(--BLACK1);
+  }
+
+  .overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .left-aside {
+    width: 100%;
+    clear: both;
+    margin-bottom: 2rem;
+  }
+
+  body {
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    box-sizing: border-box;
+    transition: 0.8s;
+    top: 100;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px 30px 0px 0px;
+    z-index: 1000;
+  }
+
+  nav.ativo {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    color: var(--WHITE1);
+    width: fit-content;
+    border-radius: 12px;
+    font-size: large;
+  }
+  .call-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sumiu {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    gap: 2px;
+  }
+
+  footer .titles {
+    margin-bottom: 0;
+  }
+}

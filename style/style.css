@@ -1,0 +1,143 @@
+@import url(./config.css);
+.img-mobile {
+  display: none;
+}
+
+body {
+  padding: 1rem;
+}
+
+#teste {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin-left: 6%;
+}
+
+.quem-somos h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.desenho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.desenho img {
+  width: 50%;
+  margin: 0 auto;
+}
+.title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.descricao {
+  margin-bottom: 2rem;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-justify: justify;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  justify-content: center;
+  font-size: large;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.titles h2 {
+  font-size: xxx-large;
+  background-color: var(--ORANGE1);
+  color: var(--WHITE1);
+  padding: 0.3rem;
+  border-radius: 12px;
+}
+.call-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  gap: 2px;
+}
+
+footer .titles {
+  margin-bottom: 0;
+}
+
+.call-action a:hover {
+  text-decoration: none;
+  color: #fff;
+  font-size: larger;
+}
+@media (max-width: 769px) {
+  .content {
+    margin: 0;
+  }
+  body {
+    padding: 0;
+  }
+  .img-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .quem-somos h2 {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .desenho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .desenho img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .descricao {
+    margin-bottom: 2rem;
+  }
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    font-size: large;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .titles h2 {
+    font-size: xxx-large;
+    background-color: var(--ORANGE1);
+    color: var(--WHITE1);
+    padding: 0.3rem;
+    border-radius: 12px;
+  }
+}

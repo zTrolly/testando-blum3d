@@ -1,0 +1,92 @@
+@import url(./config.css);
+
+.criar-conta,
+.entrar-conta {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: center;
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-control {
+  margin-bottom: 1.5rem;
+}
+
+.btn-pronto {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.img-form {
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+p {
+  text-align: center;
+}
+@media (max-width: 769px) {
+  .criar-conta,
+  .entrar-conta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: center;
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: whitesmoke;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .form-control {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-pronto {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .img-form {
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+
+  p {
+    text-align: center;
+  }
+}

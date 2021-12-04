@@ -1,0 +1,71 @@
+@import url(./config.css);
+
+#teste {
+  width: 100%;
+}
+
+.teste2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6%;
+}
+
+.formDoContato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDoContato input,
+textarea {
+  width: 50%;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.title {
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ORANGE1);
+  border-radius: 12px;
+  background-color: var(--ORANGE1);
+  text-decoration: none;
+  color: var(--WHITE1);
+  box-shadow: 0 4px 15px -6px var(--ORANGE1);
+}
+
+@media (max-width: 769px) {
+  .teste2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  .formDoContato input,
+  textarea {
+    width: 75%;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  .teste {
+    justify-content: center;
+  }
+}
